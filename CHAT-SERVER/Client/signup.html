@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>CHAT APPLICATION </title>
+		<link rel = "stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div id="chat-login-wrapper">
+			<form id = "chat-signup">
+				<input id ="user_email" type = "text" placeholder = "enter email address" autofocus />
+				<input id ="user_name" type = "text" placeholder = "enter your name" />
+				<input id ="photo_option" type = "checkbox" /> use custom photo<br>
+				<input id ="photo_input" type = "text" placeholder = "enter a url for ur photo" />
+				<input id ="password_first" type = "password" placeholder = "enter a password" />
+				<input id ="password_confirm" type = "password" placeholder = "retype u r password" />
+				<input id ="submit_button" type = "button" value = "Submit" />
+			</form>
+			<p class="chat-footer">Already an existing user? <a href="login.html">Login</a></p>
+		</div>
+
+		<!— links to our javascript files —>
+
+		<script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+		<script src=“signup.js”></script>
+		
+	</body>
+</html>
